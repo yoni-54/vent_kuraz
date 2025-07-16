@@ -1,32 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            background: turquoise;
-        }
-        textarea{
-            width: 100%;
-        }
-
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anonymous Posting</title>
+  <style>
+    body { font-family: sans-serif; max-width: 600px; margin: 2rem auto; padding: 0 1rem; background: #f9f9f9; }
+    .post, .comment { background: white; padding: 1rem; margin-bottom: 1rem; border-radius: 5px; }
+    button { margin-top: 0.5rem; }
+    textarea, input { width: 100%; padding: 0.5rem; margin-top: 0.5rem; }
+    .like-btn { background: #007bff; color: white; border: none; padding: 0.3rem 0.5rem; border-radius: 3px; cursor: pointer; }
+    .like-btn:hover { background: #0056b3; }
+  </style>
 </head>
 <body>
-    <h1>Venting System</h1>
-    <form>
-        <textarea rows="4" placeholder="Type your vent here"></textarea>
-        <br />
-        <br/>
-        <button>Post Vent</button>
-    </form>
-    <div id="ventList"></div>
-    <script src="script.js"></script>
+  <h1>🗯️ Anonymous Posting</h1>
+  <form id="postForm">
+    <textarea id="postContent" rows="3" placeholder="Post anonymously..."></textarea>
+    <button type="submit">Post</button>
+  </form>
+  <div id="postList"></div>
+
+  <script src="index.js"></script>
 </body>
 </html>
-<script>
-
-
-</script>
