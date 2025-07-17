@@ -1,85 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Anonymous Posting</title>
-  <style>
-  body {
-    font-family: sans-serif;
-    max-width: 600px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    background: linear-gradient(135deg, #dbeafe, #f0f4ff);
-    min-height: 100vh;
-  }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anonymous Posting</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        max-width: 600px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+        background: linear-gradient(135deg, #dbeafe, #f0f4ff);
+        min-height: 100vh;
+      }
 
-  h1 {
-    text-align: center;
-    color: #1e3a8a;
-  }
+      h1 {
+        text-align: center;
+        color: #1e3a8a;
+      }
 
-  .post, .comment {
-    background: white;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  }
+      .post,
+      .comment {
+        background: white;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+      }
 
-  button {
-    margin-top: 0.5rem;
-    padding: 0.5rem 0.8rem;
-    border: none;
-    border-radius: 4px;
-    background: #2563eb;
-    color: white;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
+      button {
+        margin-top: 0.5rem;
+        padding: 0.5rem 0.8rem;
+        border: none;
+        border-radius: 4px;
+        background: #2563eb;
+        color: white;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
 
-  button:hover {
-    background: #1e40af;
-  }
+      button:hover {
+        background: #1e40af;
+      }
 
-  textarea, input {
-    width: 100%;
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-    border: 1px solid #cbd5e1;
-    border-radius: 4px;
-    font-size: 1rem;
-  }
+      textarea,
+      input {
+        width: 100%;
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+        border: 1px solid #cbd5e1;
+        border-radius: 4px;
+        font-size: 1rem;
+      }
 
-  textarea:focus, input:focus {
-    outline: none;
-    border-color: #60a5fa;
-    box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.3);
-  }
+      textarea:focus,
+      input:focus {
+        outline: none;
+        border-color: #60a5fa;
+        box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.3);
+      }
 
-  .like-btn {
-    background: #10b981;
-    color: white;
-    border: none;
-    padding: 0.3rem 0.5rem;
-    border-radius: 3px;
-    cursor: pointer;
-    margin-top: 0.5rem;
-  }
+      .like-btn {
+        background: #10b981;
+        color: white;
+        border: none;
+        padding: 0.3rem 0.5rem;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-top: 0.5rem;
+      }
 
-  .like-btn:hover {
-    background: #059669;
-  }
-</style>
-</head>
-<body>
-  <h1>🗯️ Anonymous Posting</h1>
-  <form id="postForm">
-    <textarea id="postContent" rows="3" placeholder="Post anonymously..."></textarea>
-    <button type="submit">Post</button>
-  </form>
-  <div id="postList"></div>
+      .like-btn:hover {
+        background: #059669;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🗯️ Anonymous Posting</h1>
+    <form id="postForm">
+      <textarea
+        id="postContent"
+        rows="3"
+        placeholder="Post anonymously..."
+      ></textarea>
+      <button type="submit">Post</button>
+    </form>
+    <div id="postList"></div>
 
-  <script src="index.js"></script>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
