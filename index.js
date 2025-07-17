@@ -58,7 +58,6 @@ function renderPosts() {
     });
 
     postDiv.appendChild(commentForm);
-
     postList.appendChild(postDiv);
   });
 }
